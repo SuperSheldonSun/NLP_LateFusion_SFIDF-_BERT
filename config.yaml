@@ -1,0 +1,24 @@
+data:
+  root_dir: .
+  train_dir: data/MINDsmall_train
+  dev_dir: data/MINDsmall_dev
+
+paths:
+  cached_dir: cached
+  vectors_dir: vectors
+  outputs_dir: outputs
+
+model:
+  bert_name: all-MiniLM-L6-v2
+
+sfidf:
+  alpha: 0.5
+
+fusion:
+  lambda_fusion: 0.5
+  normalize: true
+
+eval:
+  k_list: [5, 10]
+
+
